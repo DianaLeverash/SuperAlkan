@@ -1,4 +1,5 @@
 from PyQt5 import uic
+from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QWidget
 import sqlite3
 
@@ -6,6 +7,7 @@ class History(QWidget):
     def __init__(self):
         super().__init__()
         self.initUI()
+        self.setWindowIcon(QIcon(r'C:\Users\Diana\Desktop\Алканы PyQT\Проект Алканы\src\иконка.jpg'))
 
     def initUI(self):
         self.setWindowTitle('История поисковых запросов')

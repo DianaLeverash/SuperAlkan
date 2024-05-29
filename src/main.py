@@ -1,5 +1,6 @@
 from Второе_окно import Alkanes
 from Первое_окно import Beginning
+from Пятое_окно import AlkansTable
 import sys
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QApplication
@@ -18,7 +19,7 @@ if __name__ == "__main__":
         QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
 
     app = QApplication(sys.argv)
-    current_window = Beginning(Alkanes)
+    current_window = Beginning(Alkanes, AlkansTable)
     current_window.show()
     sys.excepthook = except_hook
     sys.exit(app.exec())

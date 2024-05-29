@@ -1,26 +1,29 @@
 import sqlite3
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5 import uic
-from PyQt5.QtGui import QMovie
+from PyQt5.QtGui import QMovie, QIcon
 from Третье_окно import Izomers
 from Четвертое_окно import History
 
 
 class Beginning(QMainWindow):
-    def __init__(self, Class2):
+    def __init__(self, Class2, Class5):
         self.Class2 = Class2
+        self.Class5 = Class5
         super().__init__()
         self.initUI()
+        self.setWindowIcon(QIcon(r'C:\Users\Diana\Desktop\Алканы PyQT\Проект Алканы\src\иконка.jpg'))
 
     def initUI(self):
         self.setWindowTitle("Добро пожаловать! ;)")
-        uic.loadUi("Проект по Яндексу(Алканы и изомеры) 1.ui", self)
+        uic.loadUi("Алканы и изомеры 1.ui", self)
         self.setFixedSize(self.size())
         self.gif = QMovie("eten.gif")
         self.gifka.setMovie(self.gif)
         self.gif.start()
         self.ButtonBeginning.clicked.connect(self.Naznachenie_Kluchevogo_slova)
         self.watching_history.clicked.connect(self.History)
+        self.TableButton.clicked.connect(self.TableAlkans)
         self.textEdit_2.setReadOnly(True)
         self.textEdit.setReadOnly(True)
 
@@ -46,6 +49,10 @@ class Beginning(QMainWindow):
         self.cursor.execute("INSERT INTO history (alkan) VALUES (?)", [self.alkan])
         self.fileBD.commit()
         self.fileBD.close()
+
+    def TableAlkans(self):
+        self.fifth_window = self.Class5
+        self.fifth_window.show()
 
     def History(self):
         self.second_window = History()

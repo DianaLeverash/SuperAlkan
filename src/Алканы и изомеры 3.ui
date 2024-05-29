@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>353</height>
+    <width>799</width>
+    <height>347</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Изомеры алкана</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTextEdit" name="nameAlkan">
@@ -99,7 +99,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>799</width>
      <height>26</height>
     </rect>
    </property>

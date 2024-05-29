@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>760</width>
-    <height>398</height>
+    <width>793</width>
+    <height>420</height>
    </rect>
   </property>
   <property name="font">
@@ -24,7 +24,7 @@
      <rect>
       <x>410</x>
       <y>70</y>
-      <width>201</width>
+      <width>111</width>
       <height>41</height>
      </rect>
     </property>
@@ -150,13 +150,26 @@ p, li { white-space: pre-wrap; }
      <string>Посмотреть иторию</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="TableButton">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>70</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Таблица алканов</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>760</width>
+     <width>793</width>
      <height>29</height>
     </rect>
    </property>
