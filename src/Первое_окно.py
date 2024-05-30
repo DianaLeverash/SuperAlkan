@@ -17,7 +17,7 @@ class Beginning(QMainWindow):
     def initUI(self):
         self.setWindowTitle("Добро пожаловать! ;)")
         uic.loadUi("Алканы и изомеры 1.ui", self)
-        self.setFixedSize(self.size())
+        #self.setFixedSize(self.size())
         self.gif = QMovie("eten.gif")
         self.gifka.setMovie(self.gif)
         self.gif.start()
